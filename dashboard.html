@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Screen</title>
+    <link rel="stylesheet" href="dashstyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="menu">
+                <span>&#9776;</span>
+                <!-- Menu Icon -->
+            </div>
+            <h1>SVU</h1>
+            <div class="settings">
+                <span>&#9881;</span>
+                <!-- Settings Icon -->
+            </div>
+        </header>
+        <section class="profile">
+            <img src="Swami_Vivekananda_University__Barrackpore_Logo-removebg-preview.png" alt="Profile Picture" class="profile-pic">
+            <div class="profile-info">
+                <h2>Dr. Ranjan Kumar Mandal</h2>
+                <p>Head Of Department</p>
+                <p>Computer Science & Engineering</p>
+            </div>
+        </section>
+        <section class="dashboard">
+            <h2>Dashboard</h2>
+            <div class="buttons">
+                <button class="btn">Add New</button>
+                <button class="btn">Cancel</button>
+                <button class="btn">Draft</button>
+                <button class="btn">Submitted</button>
+                <button class="btn approved">Approved</button>
+                <button class="btn rejected">Rejected</button>
+            </div>
+        </section>
+    </div>
+    <script>
+        document.querySelector('.menu').addEventListener('click', () => {
+            alert('Menu clicked!');
+        });
+
+        document.querySelector('.settings').addEventListener('click', () => {
+            alert('Settings clicked!');
+        });
+    </script>
+
+
+</body>
+
+</html>

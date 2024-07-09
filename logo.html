@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVU</title>
+    <link rel="Website Icon" type="png" href="Swami_Vivekananda_University__Barrackpore_Logo-removebg-preview.png">
+    <style>
+        /* Basic reset */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            /* Optional background color */
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .logo {
+            max-width: 100%;
+            height: auto;
+            opacity: 0;
+            transform: scale(0.5);
+            animation: fadeInZoomIn 2s forwards;
+            transition: opacity 2s ease-out, transform 2s ease-out;
+        }
+        
+        @keyframes fadeInZoomIn {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .fade-out-zoom-out {
+            opacity: 0;
+            transform: scale(0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Responsive Logo Centering with Fade and Zoom -->
+        <img src="Swami_Vivekananda_University__Barrackpore_Logo-removebg-preview.png" alt="Logo" class="logo" id="logo">
+    </div>
+
+    <script>
+        // JavaScript to trigger fade-out and zoom out after 6 seconds
+        setTimeout(() => {
+            document.getElementById('logo').classList.add('fade-out-zoom-out');
+        }, 6000);
+    </script>
+</body>
+
+</html>
